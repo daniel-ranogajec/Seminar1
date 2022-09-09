@@ -1,0 +1,3 @@
+<app-add-video (onAddVideo)="addVideo($event)"></app-add-video>
+
+<app-video *ngFor="let video of videos" [video]="video" (onDeleteVideo)="deleteVideo(video)"></app-video>

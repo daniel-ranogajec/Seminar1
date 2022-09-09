@@ -1,0 +1,5 @@
+<div class="video">
+	<img [src]="video.thumbnail">
+	<h3>{{ video.title }} <fa-icon (click)="onDelete(video)" [icon]="faTimes"></fa-icon></h3>
+	<fa-icon [icon]="faPlay" [routerLink]="['/video', video.id]"></fa-icon>
+</div>
